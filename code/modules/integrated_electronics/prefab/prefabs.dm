@@ -1,3 +1,4 @@
+/* No thanks.
 /decl/prefab/ic_assembly/hand_teleporter
 	assembly_name = "hand-teleporter"
 	assembly_type = /obj/item/device/electronic_assembly
@@ -154,3 +155,4 @@
 
 /obj/prefab/proximity_frag_grenade
 	prefab_type = /decl/prefab/ic_assembly/proximity_frag_grenade_assembly
+*/
