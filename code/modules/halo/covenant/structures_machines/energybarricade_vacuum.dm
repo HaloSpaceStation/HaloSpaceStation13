@@ -42,7 +42,7 @@
 		spawn(0)
 			qdel(src)
 	return
-..()
+	..()
 
 /obj/item/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob) //Huragok picks it up to add back to holder.
 

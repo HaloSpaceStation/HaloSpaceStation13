@@ -264,3 +264,9 @@
 #define SCREAM_COOLDOWN 1 SECOND
 #define HEALTHDEFICIENCY_THRESHOLD 0.2 //20% health loss before we start feeling any sort of slowdown.
 #define HEALTHDEFICIENCY_HPLOSS_ONEPOINTSLOWDOWN_MOD 0.175 //17.5% hp loss per slowdown point
+
+// Prosthetic helpers.
+#define BP_IS_ROBOTIC(org)  ((org) && ((org).status & ORGAN_ROBOT))
+#define BP_IS_ASSISTED(org) ((org) && ((org).status & ORGAN_ASSISTED))
+#define BP_IS_BRITTLE(org)  ((org) && ((org).status & ORGAN_BRITTLE))
+#define BP_IS_BIOMECHANICAL(org)  ((org) && ((org).status & ORGAN_BIOMECH))

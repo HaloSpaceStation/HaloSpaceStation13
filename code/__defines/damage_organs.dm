@@ -55,6 +55,7 @@
 
 #define ORGAN_ASSISTED 1
 #define ORGAN_ROBOT    2
+#define ORGAN_BIOMECH 3 //Readded specifically for newer medicines and fun things... Unused, for now.
 
 //Germs and infections.
 #define GERM_LEVEL_AMBIENT  110 // Maximum germ level you can reach by standing still.

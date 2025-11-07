@@ -8,6 +8,7 @@
 // SS_TICKER
 #define SS_PRIORITY_TIMER          20
 #define SS_PRIORITY_ICON_UPDATE    20  // Queued icon updates. Mostly used by APCs and tables.
+#define SS_PRIORITY_OVERLAY        100 // Applies overlays. May cause overlay pop-in if it gets behind.
 
 // Normal
 #define SS_PRIORITY_TICKER         100 // Gameticker.

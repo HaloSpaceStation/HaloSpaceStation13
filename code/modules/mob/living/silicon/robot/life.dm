@@ -193,7 +193,7 @@
 						src.healths.icon_state = "health3"
 					if(0 to 50)
 						src.healths.icon_state = "health4"
-					if(config.health_threshold_dead to 0)
+					if(0) //Silicon's gib at death.
 						src.healths.icon_state = "health5"
 					else
 						src.healths.icon_state = "health6"

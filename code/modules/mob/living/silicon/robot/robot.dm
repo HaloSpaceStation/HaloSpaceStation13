@@ -969,31 +969,31 @@
 
 	return
 
-/mob/living/silicon/robot/proc/choose_icon(var/triesleft, var/list/module_sprites)
+/mob/living/silicon/robot/proc/choose_icon()
+	set waitfor = 0
+
 	if(!module_sprites.len)
 		to_chat(src, "Something is badly wrong with the sprite selection. Harass a coder.")
 		return
 
-	icon_selected = 0
-	src.icon_selection_tries = triesleft
+	if (icon_selected == TRUE)
+		return
+
 	if(module_sprites.len == 1 || !client)
 		if(!(icontype in module_sprites))
 			icontype = module_sprites[1]
 	else
-		icontype = input("Select an icon! [triesleft ? "You have [triesleft] more chance\s." : "This is your last try."]", "Robot Icon", icontype, null) in module_sprites
+		var/list/options = list()
+		for(var/i in module_sprites)
+			options[i] = image(icon = src.icon, icon_state = module_sprites[i])
+		icontype = show_radial_menu(src, src, options, radius = 42)
+	if(!icontype)
+		return
+
 	icon_state = module_sprites[icontype]
 	update_icon()
+	icon_selected = TRUE
 
-	if (module_sprites.len > 1 && triesleft >= 1 && client)
-		icon_selection_tries--
-		var/choice = input("Look at your icon - is this what you want?") in list("Yes","No")
-		if(choice=="No")
-			choose_icon(icon_selection_tries, module_sprites)
-			return
-
-	icon_selected = 1
-	icon_selection_tries = 0
-	to_chat(src, "Your icon has been set. You now require a module reset to change it.")
 /mob/living/silicon/robot/proc/sensor_mode() //Medical/Security HUD controller for borgs
 	set name = "Set Sensor Augmentation"
 	set category = "Silicon Commands"

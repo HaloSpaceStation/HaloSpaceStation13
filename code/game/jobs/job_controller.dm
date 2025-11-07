@@ -237,20 +237,8 @@ var/global/datum/controller/occupations/job_master
 					if(age < job.minimum_character_age) // Nope.
 						continue
 
-					switch(age)
-						if(job.minimum_character_age to (job.minimum_character_age+10))
-							weightedCandidates[V] = 3 // Still a bit young.
-						if((job.minimum_character_age+10) to (job.ideal_character_age-10))
-							weightedCandidates[V] = 6 // Better.
-						if((job.ideal_character_age-10) to (job.ideal_character_age+10))
-							weightedCandidates[V] = 10 // Great.
-						if((job.ideal_character_age+10) to (job.ideal_character_age+20))
-							weightedCandidates[V] = 6 // Still good.
-						if((job.ideal_character_age+20) to INFINITY)
-							weightedCandidates[V] = 3 // Geezer.
-						else
-							// If there's ABSOLUTELY NOBODY ELSE
-							if(candidates.len == 1) weightedCandidates[V] = 1
+					if(candidates.len == 1) //First come first serve. We also don't have age restrictions. 
+						weightedCandidates[V] = 1
 
 
 				var/mob/new_player/candidate = pickweight(weightedCandidates)
