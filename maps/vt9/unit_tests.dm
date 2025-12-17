@@ -57,5 +57,4 @@
 		/area/exoplanet/snow,
 		/area/exo_research_facility/exterior/autolight,
 		/area/glassed_planet/exterior/autolight,
-		/area/planets/Geminus/outdoor/autolight
 	)
