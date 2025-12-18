@@ -1,5 +1,4 @@
 
-
 /datum/map/vt9
 	// These areas are used specifically by code and need to be broken out somehow
 	area_usage_test_exempted_areas = list(
