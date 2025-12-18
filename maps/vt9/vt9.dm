@@ -1,4 +1,9 @@
 
+#include "../area_holders/include.dm"
+#include "../faction_bases/faction_base_unsc.dm"
+#include "../faction_bases/faction_base_cov.dm"
+#include "../Exoplanet Research/includes.dm"
+
 #if !defined(using_map_DATUM)
 	#define using_map_DATUM /datum/map/vt9
 
@@ -13,12 +18,7 @@
 
 #include "../npc_ships/om_ship_areas.dm"
 
-#include "../area_holders/include.dm"
-
 #include "../Admin Planet/includes.dm"
-
-#include "../faction_bases/faction_base_unsc.dm"
-#include "../faction_bases/faction_base_cov.dm"
 
 #include "../faction_bases/cov_base/include.dm"
 
@@ -27,8 +27,6 @@
 #include "../CRS_Unyielding_Transgression/includes.dm"
 
 #include "../UNSC_Difference_Of_Opinion/includes.dm"
-
-#include "../Exoplanet Research/includes.dm"
 
 #include "../glassed_planet/includes.dm"
 
