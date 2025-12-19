@@ -1,6 +1,4 @@
 
-#include "../_gamemodes/vt9/vt9.dm"
-
 /datum/map/vt9
 	name = "VT9-042"
 	full_name = "VT9-042"
