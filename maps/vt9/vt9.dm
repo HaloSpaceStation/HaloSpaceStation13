@@ -37,6 +37,10 @@
 
 #include "unit_tests.dm"
 
+#include "mapfile.dm"
+
+#include "jobs.dm"
+
 #include "../../code/modules/halo/lobby_music/odst_music.dm"
 #include "../../code/modules/halo/lobby_music/halo_music.dm"
 
