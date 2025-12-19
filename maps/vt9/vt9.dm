@@ -2,6 +2,8 @@
 #if !defined(using_map_DATUM)
 	#define using_map_DATUM /datum/map/vt9
 
+#include "unit_tests.dm"
+
 #include "mapfile.dm"
 
 #include "jobs.dm"
