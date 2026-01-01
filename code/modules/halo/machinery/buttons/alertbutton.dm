@@ -1,5 +1,6 @@
 
 #define DEFAULT_LIGHT_STRING "#fffeb8"
+#define TOGGLE_DELAY 5 SECONDS //How long between toggles do we need to wait.
 
 /obj/machinery/button/toggle/alarm_button
 	var/area/area_base = null
@@ -8,6 +9,7 @@
 	var/alarm_color_string = "#ff9696"
 	var/sound/alarm_sound = 'code/modules/halo/sounds/r_alert_alarm_loop.ogg'
 	var/alarm_loop_time = 13.896 SECONDS //The amount of time it takes for the alarm sound to end. Used for restarting the sound.
+	var/next_toggle = 0
 	var/currently_alarming
 	var/starting_sound = null
 	var/ending_sound = null
@@ -15,6 +17,10 @@
 /obj/machinery/button/toggle/alarm_button/activate(var/mob/user)
 	if(operating)
 		return
+	if(world.time < next_toggle)
+		to_chat(user,"<span class = 'notice'>Please wait, the alarm system is cycling...</span>")
+		return
+	next_toggle = world.time + TOGGLE_DELAY
 	operating = 1
 	active = !active
 	use_power(5)

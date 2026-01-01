@@ -1,4 +1,4 @@
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 	#include "example_shuttles.dm"
 	#include "example_unit_testing.dm"
 	#include "example_jobs.dm"

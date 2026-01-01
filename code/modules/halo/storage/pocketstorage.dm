@@ -119,6 +119,7 @@
 	can_hold = list(/obj/item/ammo_magazine/spnkr)
 	max_w_class = ITEM_SIZE_LARGE
 */ //This is now unused as it unbalances the carry capacities of ammo and the speed detriments.
+
 /obj/item/weapon/storage/pocketstore/hardcase/armorkits
 	name = "Tactical Hardcase (Armour Kits)"
 	desc = "A reinforced storage box, clipped near your pockets. Created to hold armour repair kits in a convenient location."
@@ -128,3 +129,14 @@
 
 /obj/item/weapon/storage/pocketstore/hardcase/armorkits/cov
 	icon_state = "hardcase_cov_generic"
+
+/obj/item/weapon/storage/pocketstore/hardcase/flares
+	name = "Tactical Hardcase (Flares)"
+	desc = "A reinforced storage box, clipped near your pockets. Created to hold emergency lighting flares in a convenient location."
+	icon_state = "hardcase_mags"
+	storage_slots = 6
+	can_hold = list(/obj/item/device/flashlight/flare)
+	startswith = list()
+
+/obj/item/weapon/storage/pocketstore/hardcase/flares/cov
+	icon_state = "hardcase_cov_mags"

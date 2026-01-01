@@ -2138,6 +2138,45 @@ obj/item/clothing/head/helmet/odst/donator/roadcone_orange
 	/obj/item/clothing/suit/armor/special/spartan/the_alone_random
 	)
 
+
+//SharkLordSatan//
+
+//ONI field agent
+
+/obj/item/clothing/head/helmet/SPIgen1/SharkLordSatan
+	name = "ONI Skull Suit Prototype Helmet"
+	desc = "An experimental sneaking suit cooked up by ONI researchers, designed for use by stealth operatives. The built-in rebreather will prove handy for those looking to avoid drowning."
+	icon_state = "spi_helm"
+	item_state = "SharkLordSatan_helm"
+
+/obj/item/clothing/suit/armor/special/SPIgen1/field_agent/SharkLordSatan
+	name = "ONI Skull Suit Prototype Armor"
+	desc = "An experimental sneaking suit cooked up by ONI researchers, designed for use by stealth operatives. The built-in rebreather will prove handy for those looking to avoid drowning."
+	icon_state = "spi_suit"
+	item_state = "SharkLordSatan_suit"
+
+/obj/item/clothing/shoes/magboots/SPIgen1/SharkLordSatan
+	name = "ONI Skull Suit Prototype Magboots"
+	desc = "An experimental sneaking suit cooked up by ONI researchers, designed for use by stealth operatives. The built-in rebreather will prove handy for those looking to avoid drowning."
+
+/obj/item/clothing/gloves/SPIgen1/field_agent/SharkLordSatan
+	name = "ONI Skull Suit Prototype Gloves"
+	desc = "An experimental sneaking suit cooked up by ONI researchers, designed for use by stealth operatives. The built-in rebreather will prove handy for those looking to avoid drowning."
+
+/obj/item/weapon/storage/box/large/donator/SharkLordSatan/field_agent
+	startswith = list(\
+	/obj/item/clothing/head/helmet/SPIgen1/SharkLordSatan,
+	/obj/item/clothing/suit/armor/special/SPIgen1/field_agent/SharkLordSatan,
+	/obj/item/clothing/shoes/magboots/SPIgen1/SharkLordSatan,
+	/obj/item/clothing/gloves/SPIgen1/field_agent/SharkLordSatan
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/SPIgen1/SharkLordSatan,
+	/obj/item/clothing/suit/armor/special/SPIgen1/field_agent/SharkLordSatan,
+	/obj/item/clothing/shoes/magboots/SPIgen1/SharkLordSatan,
+	/obj/item/clothing/gloves/SPIgen1/field_agent/SharkLordSatan
+	)
+
 #undef ODST_OVERRIDE
 #undef ITEM_INHAND
 #undef MARINE_OVERRIDE

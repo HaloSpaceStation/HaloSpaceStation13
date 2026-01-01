@@ -2,17 +2,10 @@
 #define ITEM_INHAND 'code/modules/halo/clothing/marine_items.dmi'
 
 /obj/item/weapon/storage/pocketstore/hardcase/flares
-	name = "Tactical Hardcase (Flares)"
-	icon_state = "hardcase_mags"
 	storage_slots = 4
-	can_hold = list(/obj/item/device/flashlight/flare)
 	startswith = list(/obj/item/device/flashlight/flare/unsc = 4)
 
-/obj/item/weapon/storage/box/flares
-	name = "box of flares"
-	icon_state = "flashbang"
-	max_storage_space = 4
-	w_class = 1
+/obj/item/weapon/storage/box/flares //Just make our generic flare box hold unsc flares on this map.
 	startswith = list(/obj/item/device/flashlight/flare/unsc = 4)
 
 /obj/item/device/flashlight/flare/unsc

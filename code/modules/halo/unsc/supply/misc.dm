@@ -103,3 +103,17 @@
 	contains = list(/obj/item/weapon/pinpointer/artifact = 1)
 	cost = 5000
 	containername = "\improper Artifact Pinpointers crate"
+
+/*CONVERSION CONTRACTS*/
+
+/decl/hierarchy/supply_pack/unsc_misc/contract
+	name = "Field Asset Contract (1)"
+	contains = list(/obj/item/conversion_contract/unsc = 1)
+	cost = 50
+	containername = "\improper Field Asset Contract crate"
+
+/decl/hierarchy/supply_pack/oni_misc/contract
+	name = "Field Asset Contract (1)"
+	contains = list(/obj/item/conversion_contract/unsc = 1)
+	cost = 50
+	containername = "\improper Field Asset Contract crate"

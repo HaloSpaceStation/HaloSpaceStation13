@@ -295,6 +295,7 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/hypos = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
+					/obj/item/weapon/storage/pocketstore/hardcase/flares = 0,
 					"Miscellaneous" = -1,
 					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/flight_item/bullfrog_pack = 0,
@@ -305,6 +306,7 @@
 					/obj/item/device/binoculars = 0,
 					/obj/item/weapon/armor_patch = 0,
 					/obj/item/weapon/armor_patch/mini = 0,
+					/obj/item/weapon/storage/box/flares/unsc = 0,
 					/obj/item/drop_pod_beacon = 0,
 					"EVA Equipment" = -1,
 					/obj/item/weapon/storage/box/large/armorset/eva = 0,
@@ -368,7 +370,7 @@
 					)
 
 /obj/machinery/vending/armory/attachment/soe
-	name = "SOE Attachments Vendor"
+	name = "GAO Attachments Vendor"
 	desc = "A vendor full? of attachments *the rest is scratched off*."
 	req_access = list(access_soe)
 	products = list(/obj/item/weapon_attachment/barrel/suppressor = 5,
@@ -462,6 +464,7 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/hypos = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
+					/obj/item/weapon/storage/pocketstore/hardcase/flares = 0,
 					"Miscellaneous" = -1,
 					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/weapon/storage/firstaid/unsc = 0,
@@ -469,7 +472,8 @@
 					/obj/item/stack/barbedwire/fifteen = 0,
 					/obj/item/weapon/armor_patch = 0,
 					/obj/item/weapon/armor_patch/mini = 0,
-					/obj/item/drop_pod_beacon = 0
+					/obj/item/drop_pod_beacon = 0,
+					/obj/item/weapon/storage/box/flares/unsc = 0
 					)
 	amounts = list(\
 					/obj/item/weapon/storage/box/large/armorset/odst/rifleman = 4,
@@ -584,6 +588,7 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/hypos = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
+					/obj/item/weapon/storage/pocketstore/hardcase/flares = 0,
 					"Explosives" = -1,
 					/obj/item/weapon/plastique = 0,
 					/obj/item/weapon/grenade/frag/m9_hedp = 0,
@@ -594,7 +599,9 @@
 					/obj/item/device/binoculars = 0,
 					/obj/item/weapon/handcuffs = 0,
 					/obj/item/weapon/armor_patch = 0,
-					/obj/item/drop_pod_beacon = 0)
+					/obj/item/drop_pod_beacon = 0,
+					/obj/item/weapon/storage/box/flares/unsc = 0
+					)
 	amounts = list(\
 		/obj/item/weapon/gun/projectile/heavysniper = 1,
 		/obj/item/weapon/gun/projectile/m545_lmg = 1,
@@ -612,13 +619,14 @@
 	req_access = list(access_soe)
 	products = list(
 					"Armor" = -1,
-					/obj/item/weapon/storage/box/large/armorset/soe = 4,
-					/obj/item/weapon/storage/box/large/armorset/soe/cqb = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/sniper = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/medic = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/engineer = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/squadleader = 1,
-					/obj/item/weapon/storage/box/large/armorset/soe/eva = 10,
+					/obj/item/clothing/suit/armor/special/gao_battlejumper = 10,
+					/obj/item/clothing/suit/armor/special/gao_battlejumper/specialist = 10,
+					/obj/item/clothing/head/helmet/gao_battlejumper/solid = 10,
+					/obj/item/clothing/head/helmet/gao_battlejumper/visor = 10,
+					/obj/item/clothing/head/helmet/gao_battlejumper = 10,
+					/obj/item/clothing/under/gao_battlejumper_jumpsuit = 10,
+					/obj/item/clothing/shoes/magboots/gao_battlejumper = 10,
+					/obj/item/clothing/gloves/thick/gao_battlejumper = 10,
 					/obj/item/weapon/storage/backpack/cmdo/eng = 2,
 					/obj/item/weapon/storage/backpack/cmdo/med = 2,
 					/obj/item/weapon/storage/backpack/cmdo = 2,
@@ -671,12 +679,14 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/hypos = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
+					/obj/item/weapon/storage/pocketstore/hardcase/flares = 0,
 					"Miscellaneous" = -1,
 					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/flight_item/bullfrog_pack = 0,
 					/obj/item/weapon/armor_patch = 0,
 					/obj/item/weapon/armor_patch/mini = 0,
 					/obj/item/stack/barbedwire/fifteen = 0,
+					/obj/item/weapon/storage/box/flares/unsc = 0
 					)
 	amounts = list(\
 		/obj/item/clothing/accessory/storage/IFAK/UNSC = 20,

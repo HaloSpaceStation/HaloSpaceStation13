@@ -1,3 +1,5 @@
+#define POPBALANCE_DEADLOCK_JOBCOST_THRESHOLD 2
+
 /datum/job
 
 	//The name of the job
@@ -268,8 +270,8 @@
 							else
 								to_chat(feedback, "<span class='boldannounce'>Popbalance cost for this role is too high, but lower-cost roles would allow joining.</span>")
 							//If we're cost one, give us the chance to skip poplock.
-							if(pop_balance_mult <= 1)
-								//If all factions have checked, and failed the pop lock, and this job is cost-1, then allow us through anyway.
+							if(pop_balance_mult <= POPBALANCE_DEADLOCK_JOBCOST_THRESHOLD)
+								//If all factions have checked, and failed the pop lock, and this job is lowcost, then allow us through anyway.
 								var/forcerole = 1
 								for(var/f_type in ticker.mode.faction_balance)
 									if(!(f_type in last_checked_lock))

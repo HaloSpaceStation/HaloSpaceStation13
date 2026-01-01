@@ -1,5 +1,5 @@
 
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 
 	#include "jobs_boulder.dm"
 	#include "jobs_ram.dm"

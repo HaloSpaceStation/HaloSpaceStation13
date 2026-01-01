@@ -68,3 +68,11 @@
 	contains = list(/obj/item/weapon/pinpointer/advpinpointer/bombplantlocator = 1)
 	cost = 50
 	containername = "\improper Bomb Plant Pinpointer crate"
+
+/* CONVERSION CONTRACTS */
+
+/decl/hierarchy/supply_pack/covenant_equipment/contract
+	name = "Field Asset Contract (1)"
+	contains = list(/obj/item/conversion_contract/cov = 1)
+	cost = 50
+	containername = "\improper Field Asset Contract crate"

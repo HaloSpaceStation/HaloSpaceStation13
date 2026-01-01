@@ -131,4 +131,3 @@ obj/item/clothing/under/gao_battlejumper_jumpsuit
 	force = 5
 	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 	siemens_coefficient = 0.15
-

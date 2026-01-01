@@ -26,7 +26,7 @@
 	allowed_gamemodes = list("base_assault")
 	map_admin_faxes = list("Ministry of Tranquility (General)","Ministry of Resolution (War Matters)","Ministry of Fervent Intercession (Internal Affairs)")
 
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 
 	#define using_map_DATUM /datum/map/base_assault
 

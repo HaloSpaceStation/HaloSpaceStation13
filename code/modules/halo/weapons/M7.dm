@@ -51,7 +51,6 @@
 	item_state = "m7s"
 	wielded_item_state = "m7s-wielded"
 	silenced = 1
-	is_heavy = 1
 	scoped_accuracy = 1
 	magazine_type = /obj/item/ammo_magazine/m7/m443/rnd48
 	allowed_magazines = list(/obj/item/ammo_magazine/m7/m443/rnd48,/obj/item/ammo_magazine/m7/rubber)

@@ -8,6 +8,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT | SLOT_POCKET
 	var/repair_supplies = 40 //The amount of armor damage this patch can repair. Increased to 40, so you'll always get 2 full repairs out of it.
+	var/repair_time = ITEM_REPAIR_DELAY
 
 /obj/item/weapon/armor_patch/examine(var/mob/examiner)
 	. = ..()
@@ -46,7 +47,7 @@
 		return
 
 	user.visible_message("<span class = 'notice'>[user] starts to patch up damage to [c].</span>")
-	var/repairtime = ITEM_REPAIR_DELAY
+	var/repairtime = repair_time
 	if(repair_by_other)
 		repairtime /= 2
 	if(!do_after(user,repairtime,c,1,1,,1))
@@ -76,10 +77,11 @@
 
 /obj/item/weapon/armor_patch/mini
 	name = "Miniature Armor Repair Kit"
-	desc ="A small, simple, limited-use kit that allows armor to be patched up, restoring a portion of the protection it usually affords. Reduced to the bare essentials of repair to fit on bandoliers and smaller such storage items."
+	desc ="A small, simple, limited-use kit that allows armor to be patched up, restoring a portion of the protection it usually affords. Reduced to the bare essentials, so it fits in smaller storage containers and is faster to repair."
 	icon_state = "armor_patch_mini"
 	w_class = ITEM_SIZE_SMALL
-	repair_supplies = 20 // Increased to 20 so you'll always get at least 1 full repair out of it.
+	repair_supplies = 10 //Not a completely full repair, just patching it up.
+	repair_time = 3 SECONDS //Intentionally not 1/4th time for 1/4th repair supplies.
 
 /obj/item/weapon/armor_patch/mini/cov
 	icon_state = "armor_patch_cov_mini"

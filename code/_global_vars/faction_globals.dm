@@ -1,0 +1,6 @@
+GLOBAL_LIST_EMPTY(unsc_base_spawns)
+GLOBAL_LIST_EMPTY(unsc_base_fallback_spawns)
+GLOBAL_LIST_EMPTY(covenant_base_spawns)
+GLOBAL_LIST_EMPTY(covenant_base_fallback_spawns)
+GLOBAL_LIST_EMPTY(innie_base_spawns)
+GLOBAL_LIST_EMPTY(innie_base_fallback_spawns)

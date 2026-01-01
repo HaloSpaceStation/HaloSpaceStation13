@@ -7,6 +7,17 @@
 */
 #define BASE_MOVEDELAY_MOD_APPLYFOR_TIME 1.5 SECONDS
 
+#define DRUGGY_ACCMOD -1
+
+#define DIZZY_DISPMOD 0.15
+
+#define JITTER_DISPMOD 0.3
+
+#define BLUREYE_ACCMOD -2
+#define BLUREYE_DISPMOD 0.1
+
+#define HALLU_ACCMOD -3
+
 /datum/firemode
 	var/name = "default"
 	var/list/settings = list()
@@ -575,6 +586,24 @@
 				temp_one_hand_penalty = -one_hand_penalty
 			disp_mod += temp_one_hand_penalty*0.5 //dispersion per point of two-handedness
 
+	//Process Livingmob status effects
+	var/mob/living/usermob = user
+	if(istype(usermob))
+		//Acc First
+		if(usermob.druggy)
+			acc_mod += DRUGGY_ACCMOD
+		if(usermob.eye_blurry)
+			acc_mod += BLUREYE_ACCMOD
+		if(usermob.hallucination)
+			acc_mod += HALLU_ACCMOD
+		//Dispersion Second
+		if(usermob.dizziness)
+			disp_mod += DIZZY_DISPMOD
+		if(usermob.jitteriness)
+			disp_mod += JITTER_DISPMOD
+		if(usermob.eye_blurry)
+			disp_mod += BLUREYE_DISPMOD
+
 	//Accuracy modifiers
 	P.accuracy = accuracy + acc_mod
 	P.dispersion = max(0,disp_mod)
@@ -584,7 +613,7 @@
 		//If you aim at someone beforehead, it'll hit more often.
 		//Kinda balanced by fact you need like 2 seconds to aim
 		//As opposed to no-delay pew pew
-		P.accuracy += 2
+		P.accuracy += 4
 
 //does the actual launching of the projectile
 /obj/item/weapon/gun/proc/process_projectile(obj/projectile, mob/user, atom/target, var/target_zone, var/params=null)

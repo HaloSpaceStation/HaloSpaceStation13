@@ -1,4 +1,4 @@
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 
 	//gamemode
 	#include "../_gamemodes/firefight/_all_includes.dm"

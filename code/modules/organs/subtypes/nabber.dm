@@ -124,8 +124,8 @@
 	open = 1
 
 /obj/item/organ/internal/brain/nabber
-	var lowblood_tally = 0
-	var lowblood_mult = 2
+	var/lowblood_tally = 0
+	var/lowblood_mult = 2
 	name = "distributed nervous system"
 	parent_organ = BP_CHEST
 

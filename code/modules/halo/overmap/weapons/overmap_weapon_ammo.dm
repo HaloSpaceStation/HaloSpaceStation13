@@ -24,7 +24,7 @@
 	icon = 'code/modules/halo/overmap/weapons/mac_ammo.dmi'
 	icon_state = "slug"
 
-/obj/overmap_weapon_ammo/mac/Move()
+/obj/overmap_weapon_ammo/Projector_laser/Move()
 	.=..()
 	if(dir == NORTH || SOUTH)
 		bounds = "32,288"

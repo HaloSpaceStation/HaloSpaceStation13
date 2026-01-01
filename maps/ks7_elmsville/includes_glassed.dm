@@ -7,7 +7,7 @@
 #include "KS7_535_1_Glassed.dmm"
 #include "KS7_535_2_Glassed.dmm"
 
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 
 	#define using_map_DATUM /datum/map/ks7_elmsville
 	#include "jobdefs.dm"

@@ -16,7 +16,7 @@
 	complexity = 15
 
 /datum/research_design/thermals
-	name = "Optical meson scanner"
+	name = "Optical Thermal scanner"
 	desc = "Display heat signatures of living organisms through walls."
 	build_type = PROTOLATHE
 	required_materials = list("steel" = 15, "glass" = 10, "gold" = 10)

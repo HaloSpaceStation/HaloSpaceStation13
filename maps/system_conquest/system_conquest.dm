@@ -1,5 +1,5 @@
 
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 	#define using_map_DATUM /datum/map/system_conquest
 
 #include "mapfile.dm"
@@ -29,7 +29,7 @@
 
 #include "../faction_bases/Cassius_Base/include.dm"
 
-#include "../urf_flagship/includes.dm"
+#include "../GNS_Retribution/includes.dm"
 
 #include "../CRS_Unyielding_Transgression/includes.dm"
 

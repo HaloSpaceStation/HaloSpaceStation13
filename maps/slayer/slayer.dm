@@ -1,5 +1,5 @@
 
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 
 	#include "slayer_itemspawn_markers.dm"
 	#include "death_asteroid_areas.dm"

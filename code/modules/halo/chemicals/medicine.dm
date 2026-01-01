@@ -1,7 +1,6 @@
 #define BIOFOAM_COST_STOPBLEED 0.2
 #define BIOFOAM_COST_MENDBONE 0.3
 #define BIOFOAM_COST_MENDINTERNAL 0.15
-#define BIOFOAM_COST_MENDEXTERNAL 0.25
 #define BIOFOAM_COST_FIXWOUNDS 0.1
 #define BIOFOAM_COST_REMOVESHRAP 0.35
 
@@ -76,21 +75,22 @@
 		o.clamp_organ()
 		o.update_damages()
 		to_chat(o.owner,"<span class = 'notice'>You feel the biofoam stop the bleeding in your [o.name].</span>")
+		return 1
+	return 0
 
 /datum/reagent/biofoam/proc/mend_external(var/mob/living/carbon/human/H)
-	var/fixed_anything = 0
 	for(var/obj/item/organ/external/o in H.organs)
 		check_and_stop_bleeding(o)
-		if(o.brute_dam + o.burn_dam >= o.min_bruised_damage && check_and_consume_cost(BIOFOAM_COST_MENDEXTERNAL))
-			o.heal_damage(o.min_bruised_damage,o.min_bruised_damage)
+		//Stripping this out for now; instead external heals will be done by downstaging relevant wounds in the wound section.
+		/*
+		if(o.brute_dam + o.burn_dam >= (o.min_broken_damage/2) && check_and_consume_cost(BIOFOAM_COST_MENDEXTERNAL))
+			o.heal_damage(o.min_broken_damage,o.min_broken_damage)
 			fixed_anything = 1
+		*/
 		if(o.status & ORGAN_BROKEN && check_and_consume_cost(BIOFOAM_COST_MENDBONE))
 			o.mend_fracture()
 			H.next_pain_time = world.time //Overrides the next pain timer
 			H.custom_pain("<span class = 'userdanger'>You feel the bones in your [o.name] being pushed into place.</span>",10)
-			fixed_anything = 1
-	if(fixed_anything)
-		to_chat(H,"<span class = 'notice'>You feel your limbs knitting themselves back together.</span>")
 
 /datum/reagent/biofoam/proc/mend_internal(var/mob/living/carbon/human/H)
 	var/fixed_anything = 0
@@ -104,15 +104,22 @@
 
 /datum/reagent/biofoam/proc/fix_wounds(var/mob/living/carbon/human/H)
 	var/fixed_anything = 0
-	for(var/obj/item/organ/external/o in H.organs)
+	for(var/obj/item/organ/external/o in H.bad_external_organs)
 		for(var/wounds in o.wounds)
 			var/datum/wound/W = wounds
 			if(W.bleed_timer > 0 && check_and_consume_cost(BIOFOAM_COST_FIXWOUNDS))
 				W.bleed_timer = 0
-				W.bandaged = 1
-				W.salved = 1
+				W.bandage()
+				W.salve()
 				o.update_damages()
 				fixed_anything = 1
+			if(W.damage > 10 && W.current_stage != W.stages.len && check_and_consume_cost(BIOFOAM_COST_FIXWOUNDS))
+				//Go down a stage, but heal a wound below 10.
+				var/heal_by = 0
+				var/next_stage = W.current_stage++
+				var/next_stage_dam = max(10,W.damage_list[next_stage])
+				heal_by = (W.damage - next_stage_dam)
+				W.heal_damage(heal_by)
 	if(fixed_anything)
 		to_chat(H,"<span class = 'notice'>You feel the bleeding of your wounds slow, then stop.</span>")
 
@@ -121,7 +128,7 @@
 		for(var/datum/wound/w in o.wounds)
 			for(var/obj/embedded in w.embedded_objects)
 				if(!check_and_consume_cost(BIOFOAM_COST_REMOVESHRAP))
-					continue
+					break
 				o.implants -= embedded
 
 				w.embedded_objects -= embedded //Removing the embedded item from the wound
@@ -138,8 +145,8 @@
 		M.custom_pain("You feel a searing pain in your veins.",3)
 		remove_embedded(M)
 		mend_internal(M)
-		fix_wounds(M)
 		mend_external(M)
+		fix_wounds(M)
 		spawn(5)
 			M.add_chemical_effect(CE_PAINKILLER, 5)
 		if(volume <= metabolism)

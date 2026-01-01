@@ -68,7 +68,14 @@
 
 /obj/item/conversion_contract/proc/do_convert(var/mob/target)
 	curr_target = null
+	var/datum/faction/F = GLOB.factions_by_name[target.faction] //Get the faction we're coming from and remove us
+	if(F)
+		F.living_minds.Remove(target)
+	F = GLOB.factions_by_name[faction_to] //Get the faction we're moving to, and add them.
+	if(F)
+		F.living_minds.Add(target)
 	target.faction = faction_to
+
 	log_admin("[target.name] ([target.ckey]), has been successfully converted, faction changed to [faction_to]")
 
 /obj/item/conversion_contract/attack_self(var/mob/user)

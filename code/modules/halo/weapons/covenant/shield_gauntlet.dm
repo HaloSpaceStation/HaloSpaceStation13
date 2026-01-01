@@ -15,7 +15,7 @@
 
 	var/shield_max_charge = 380
 	var/shield_current_charge = 380
-	var/list/shield_colour_values = list("#0000FF","#00FFFF","#FFFF00","#FFA500","#FF2600")		//highest charge to lowest charge
+	var/list/shield_colour_values = list()
 	var/shield_recharge_delay = 6 SECONDS //The delay between taking damage and starting to recharge, in ticks.
 	var/shield_next_charge
 	var/active_slowdown_amount = 0.8 //Bracing to hide behind the shield.
@@ -254,11 +254,18 @@
 		if(istype(M))
 			to_chat(M,"\icon[connected_shield] <span class='info'>[src] is now at [shield_charge_string()].</span>")
 
-
-
 #undef GAUNTLET_WARNING_DELAY
 
 //shield subtype defines//
+
+/obj/item/clothing/gloves/shield_gauntlet/major
+	name = "Kig-Yar Point Defense Gauntlet"
+	desc = "A wrist-worn gauntlet that contains a directional shield generator, allowing it to provide protection from gunfire in the direction the user is facing."
+	species_restricted = list("Kig-Yar")
+	body_parts_covered = HANDS
+	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+	siemens_coefficient = 0.15
+	shield_colour_values = list("#ff0000","#ff0044","#ff00d9","#5100ff","#0000ff") //highest charge to lowest charge
 
 /obj/item/clothing/gloves/shield_gauntlet/kigyar
 	name = "Kig-Yar Point Defense Gauntlet"
@@ -267,6 +274,7 @@
 	body_parts_covered = HANDS
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
 	siemens_coefficient = 0.15
+	shield_colour_values = list("#0000FF","#5100ff","#ff00d9","#ff0044","#ff0000")
 
 /obj/item/clothing/gloves/shield_gauntlet/unsc
 	name = "Experimental UNSC Energy-Shield Gauntlet"
@@ -275,3 +283,13 @@
 	body_parts_covered = HANDS
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
 	siemens_coefficient = 0.15
+	shield_colour_values = list("#0000FF","#5100ff","#ff00d9","#ff0044","#ff0000")
+
+/obj/item/clothing/gloves/shield_gauntlet/ant
+	name = "Modified Kig-Yar Shield Gauntlet"
+	desc = "A wrist-worn gauntlet that contains a directional shield generator. It allows protection from gunfire in the direction the user is facing."
+	species_restricted = list("Kig-Yar")
+	body_parts_covered = HANDS
+	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+	siemens_coefficient = 0.15
+	shield_colour_values = list("#FEF001","#ffc003","#FD9A01","#FD6104","#F00505")

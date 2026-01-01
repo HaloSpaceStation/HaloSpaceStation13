@@ -14,3 +14,4 @@
 	icon = 'code/modules/halo/misc/halohumanmisc.dmi'
 	icon_state = "flashlight"
 	item_state = "flashlight-unsc"
+

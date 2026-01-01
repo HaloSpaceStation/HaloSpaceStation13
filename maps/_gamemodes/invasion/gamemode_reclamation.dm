@@ -1,5 +1,5 @@
 //To ensure no type-errors from overmap_hide
-/obj/effect/overmap/ship/urf_flagship
+/obj/effect/overmap/ship/gsn_retribution
 
 /datum/game_mode/outer_colonies/reclamation
 	name = "Reclamation"
@@ -9,7 +9,7 @@
 	required_players = 0
 	end_conditions_required = 2
 	factions = list(/datum/faction/unsc, /datum/faction/covenant)
-	overmap_hide = list(/obj/effect/overmap/ship/urf_flagship)
+	overmap_hide = list(/obj/effect/overmap/ship/gsn_retribution)
 	faction_balance = list(/datum/faction/covenant,/datum/faction/unsc)
 	disabled_jobs_types = list(\
 		/datum/job/soe_commando,\

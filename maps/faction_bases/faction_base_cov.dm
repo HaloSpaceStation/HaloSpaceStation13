@@ -12,8 +12,6 @@
 	overmap_spawn_near_me = list(/obj/effect/overmap/ship/covenant_light_cruiser)
 	base = 1
 
-GLOBAL_LIST_EMPTY(covenant_base_spawns)
-
 /datum/spawnpoint/cov_base
 	display_name = "Covenant Base Spawns"
 	restrict_job_type = list(
@@ -34,8 +32,6 @@ GLOBAL_LIST_EMPTY(covenant_base_spawns)
 /datum/spawnpoint/cov_base/New()
 	..()
 	turfs = GLOB.covenant_base_spawns
-
-GLOBAL_LIST_EMPTY(covenant_base_fallback_spawns)
 
 /datum/spawnpoint/cov_base_fallback
 	display_name = "Covenant Base Fallback Spawns"

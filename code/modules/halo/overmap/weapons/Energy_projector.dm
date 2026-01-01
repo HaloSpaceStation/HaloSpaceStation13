@@ -139,14 +139,15 @@
 
 /obj/item/projectile/projector_laser_damage_proj/check_penetrate(var/atom/a)
 	. = ..()
-	if(istype(a,/obj/effect/shield))
-		return 0
+	if(istype(a,/obj/effect/shield)) //Intentionally no blast against shields.
+		. = 0
 
-/obj/item/projectile/projector_laser_damage_proj/on_hit(var/atom/a)
+/obj/item/projectile/projector_laser_damage_proj/on_impact(var/atom/impacted)
+	. = ..()
 	if(isnull(glass_effect_beam))
 		glass_effect_beam = new
-	explosion(get_turf(a),-1,-1,2,5, adminlog = 0)
-	glass_effect_beam.do_glassing_effect(a,4,/turf/unsimulated/floor/lava/glassed_turf/to_space)//Value of 3 chosen due to min light damage radius of MACs
+	explosion(get_turf(impacted),-1,-1,2,5, adminlog = 0)
+	glass_effect_beam.do_glassing_effect(impacted,4,/turf/unsimulated/floor/lava/glassed_turf/to_space)//Value of 3 chosen due to min light damage radius of MACs
 	if(!warned)
 		warned = 1
 		var/obj/effect/overmap/sector/S = map_sectors["[src.z]"]

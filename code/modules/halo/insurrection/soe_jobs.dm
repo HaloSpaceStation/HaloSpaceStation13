@@ -1,14 +1,13 @@
 /datum/job/soe_commando
-	title = "SOE Commando"
+	title = "GAO battlejumper"
 	spawn_faction = "Insurrection"
 	latejoin_at_spawnpoints = 1
 	generate_email = 1
 	account_allowed = 1
-	outfit_type = /decl/hierarchy/outfit/job/soe_commando
-	alt_titles = list("SOE Initiate",\
-	"SOE Trooper",\
-	"SOE Corporal",\
-	"SOE Surgeon")
+	outfit_type = /decl/hierarchy/outfit/job/gao_battlejumper
+	alt_titles = list("Battlejumper Trooper",\
+	"Battlejumper Corporal",\
+	"Battlejumper Surgeon")
 
 	total_positions = 6
 	spawn_positions = 6
@@ -23,15 +22,15 @@
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
 /datum/job/soe_commando_officer
-	title = "SOE Commando Officer"
+	title = "GAO Battlejumper Officer"
 	spawn_faction = "Insurrection"
 	latejoin_at_spawnpoints = 1
 	generate_email = 1
 	account_allowed = 1
-	outfit_type = /decl/hierarchy/outfit/job/soe_commando_officer
-	alt_titles = list("SOE Sergeant",\
-	"SOE Adjutant",\
-	"SOE Lieutenant")
+	outfit_type = /decl/hierarchy/outfit/job/gao_battlejumper_officer
+	alt_titles = list("Battlejumper Sergeant",\
+	"Battlejumper Adjutant",\
+	"Battlejumper Lieutenant")
 
 	total_positions = 2
 	spawn_positions = 2
@@ -44,14 +43,14 @@
 	radio_speech_size = RADIO_SPEECH_LEADER
 
 /datum/job/soe_commando_captain
-	title = "SOE Commando Captain"
+	title = "GAO Battlejumper Captain"
 	spawn_faction = "Insurrection"
 	latejoin_at_spawnpoints = 1
 	generate_email = 1
 	account_allowed = 1
-	outfit_type = /decl/hierarchy/outfit/job/soe_commando_captain
-	alt_titles = list("SOE Commander",\
-	"SOE Captain")
+	outfit_type = /decl/hierarchy/outfit/job/gao_battlejumper_captain
+	alt_titles = list("Battlejumper Commander",\
+	"Battlejumper Captain")
 
 	total_positions = 1
 	spawn_positions = 1

@@ -41,8 +41,7 @@
 		new/obj/item/energybarricade/vacuum_shield(get_turf(src))
 		spawn(0)
 			qdel(src)
-	return
-..()
+	return ..()
 
 /obj/item/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob) //Huragok picks it up to add back to holder.
 

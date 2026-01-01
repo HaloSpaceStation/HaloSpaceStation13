@@ -22,7 +22,7 @@
 	/obj/item/species_convert/orion = 1,
 	/obj/item/lace_injector/odst = 1 //orioning removes your neural lace
 	)
-	cost = 4000
+	cost = 200
 	containername = "\improper Orion organs freezer"
 
 /decl/hierarchy/supply_pack/oni_special/laceinjectormarine //So UNSC has a way to give access to people

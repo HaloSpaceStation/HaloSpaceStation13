@@ -91,6 +91,7 @@
 
 	head = /obj/item/clothing/head/helmet/kigyar/major
 	suit = /obj/item/clothing/suit/armor/kigyar/major
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/major
 	//
 	id_type = /obj/item/weapon/card/id/jackal_major
 	id_slot = slot_wear_id

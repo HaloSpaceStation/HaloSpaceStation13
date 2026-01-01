@@ -1,4 +1,4 @@
-#if !defined(using_map_DATUM)
+#if (defined(IN_MAP_EDITOR)||!defined(using_map_DATUM))
 
 	#include "../../code/modules/halo/lobby_music/covenant_music.dm"
 

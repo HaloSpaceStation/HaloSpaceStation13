@@ -4,7 +4,7 @@
 	do_not_edit = 1
 	var/datum/faction/contact_faction
 
-/datum/computer_file/data/com/proc/generate_data(var/datum/faction/F)
+/datum/computer_file/data/com/proc/generate_data(datum/faction/F)
 	filename = "comms_[(rand(1,100) * world.time) % 9999]"
 	contact_faction = F
 

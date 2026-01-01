@@ -31,10 +31,7 @@
 
 /obj/machinery/mac_cannon/ammo_loader/proc/update_ammo()
 	for(var/obj/machinery/overmap_weapon_console/console in linked_consoles)
-		for(var/obj/round in contained_rounds)
-			if(round in console.loaded_ammo)
-				continue
-			console.loaded_ammo += round
+		console.loaded_ammo |= contained_rounds
 
 /obj/machinery/mac_cannon/ammo_loader/examine(var/mob/user)
 	. = ..()
@@ -268,17 +265,17 @@
 
 /obj/item/projectile/mac_round/check_penetrate(var/atom/impacted)
 	. = ..()
-	if(istype(impacted,/obj/effect/shield))
-		return 0
+	if(istype(impacted,/obj/effect/shield)) //Intentionally not exploding against shields.
+		. = 0
 
-/obj/item/projectile/mac_round/on_hit(var/atom/impacted)
+/obj/item/projectile/mac_round/on_impact(var/atom/impacted)
+	. = ..()
 	var/increase_from_damage = round(damage/250)
 	explosion(get_turf(impacted),2 + increase_from_damage,4 + increase_from_damage,5 + increase_from_damage,8 + increase_from_damage, adminlog = 0)
 	if(!warned)
 		warned = 1
 		var/obj/effect/overmap/sector/S = map_sectors["[src.z]"]
 		S.adminwarn_attack()
-	. = ..()
 
 //BROKEN COMPONENTS//
 /obj/structure/repair_component/mac_console

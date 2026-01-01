@@ -10,6 +10,10 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#if (defined(SPACEMAN_DMM) || defined(FASTDMM))
+#define IN_MAP_EDITOR
+#define MAP_OVERRIDE
+#endif
 #include "code\_macros.dm"
 #include "code\client_macros.dm"
 #include "code\hub.dm"
@@ -75,6 +79,7 @@
 #include "code\__defines\xenoarcheaology.dm"
 #include "code\__defines\ZAS.dm"
 #include "code\_global_vars\configuration.dm"
+#include "code\_global_vars\faction_globals.dm"
 #include "code\_global_vars\logging.dm"
 #include "code\_global_vars\misc.dm"
 #include "code\_global_vars\mobs.dm"
@@ -1873,6 +1878,7 @@
 #include "code\modules\halo\misc\fakewall.dm"
 #include "code\modules\halo\misc\Fire_simple.dm"
 #include "code\modules\halo\misc\flaming_torch.dm"
+#include "code\modules\halo\misc\flares.dm"
 #include "code\modules\halo\misc\gas_collector.dm"
 #include "code\modules\halo\misc\gas_collector_interact.dm"
 #include "code\modules\halo\misc\gas_geyser.dm"
@@ -2109,6 +2115,7 @@
 #include "code\modules\halo\squads\squad-waypoint-manager.dm"
 #include "code\modules\halo\squads\squad_camera_console.dm"
 #include "code\modules\halo\squads\waypoint_object.dm"
+#include "code\modules\halo\storage\boxes.dm"
 #include "code\modules\halo\storage\IFAK.dm"
 #include "code\modules\halo\storage\pocketstorage.dm"
 #include "code\modules\halo\structures\_destructible.dm"

@@ -131,6 +131,7 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/flares/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
@@ -145,6 +146,7 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
+		/obj/item/weapon/storage/box/flares/cov = 0,
 		/obj/item/weapon/pinpointer/artifact = 0,
 		"EVA Equipment" = -1,
 		/obj/item/weapon/storage/box/large/armorset/elite/eva = 0,
@@ -235,6 +237,7 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/flares/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
@@ -253,6 +256,7 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
+		/obj/item/weapon/storage/box/flares/cov = 0,
 		/obj/item/weapon/pinpointer/artifact = 0,
 		"EVA Equipment" = -1,
 		/obj/item/weapon/storage/box/large/armorset/brute/eva = 0,
@@ -341,6 +345,7 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/flares/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/flight_item/covenant_pack = 0,
@@ -359,6 +364,7 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
+		/obj/item/weapon/storage/box/flares/cov = 0,
 		/obj/item/weapon/pinpointer/artifact = 0,
 		"EVA Equipment" = -1,
 		/obj/item/weapon/storage/box/large/armorset/kigyar/eva = 0,
@@ -453,6 +459,7 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/flares/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/device/flashlight/covenant = 0,
@@ -465,6 +472,7 @@
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0,
+		/obj/item/weapon/storage/box/flares/cov = 0,
 		/obj/item/weapon/pinpointer/artifact = 0
 	)
 	amounts = list(\
@@ -505,6 +513,7 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/flares/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
 		/obj/item/device/flashlight/covenant = 0,
@@ -516,7 +525,8 @@
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/pinpointer/artifact = 0,
-		/obj/item/drop_pod_beacon/covenant = 0
+		/obj/item/drop_pod_beacon/covenant = 0,
+		/obj/item/weapon/storage/box/flares/cov = 0
 	)
 	amounts = list(\
 		/obj/item/device/flashlight/covenant = 3,

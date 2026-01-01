@@ -91,5 +91,6 @@
 
 /obj/item/projectile/bullet/covenant/spirit_cannon
 	damage = 40
+	armor_penetration = 30
 	icon = 'code/modules/halo/icons/Covenant_Projectiles.dmi'
 	icon_state = "heavy_plas_cannon"
