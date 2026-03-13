@@ -22,7 +22,7 @@
 
 #include "../faction_bases/cov_base/include.dm"
 
-#include "../faction_bases/Cassius_Base/include.dm"
+#include "../faction_bases/ODP_Cassius/ODP_Cassius.dm"
 
 #include "../CRS_Unyielding_Transgression/includes.dm"
 
