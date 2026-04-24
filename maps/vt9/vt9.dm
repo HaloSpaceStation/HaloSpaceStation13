@@ -17,20 +17,13 @@
 
 #include "../Admin Planet/includes.dm"
 
-#include "../faction_bases/faction_base_unsc.dm"
-#include "../faction_bases/faction_base_cov.dm"
-
-#include "../faction_bases/cov_base/include.dm"
-
-#include "../faction_bases/Cassius_Base/include.dm"
+#include "../faction_bases/ODP_Cassius/ODP_Cassius.dm"
 
 #include "../CRS_Unyielding_Transgression/includes.dm"
 
 #include "../UNSC_Difference_Of_Opinion/includes.dm"
 
 #include "../Exoplanet Research/includes.dm"
-
-#include "../glassed_planet/includes.dm"
 
 #elif !defined(MAP_OVERRIDE)
 
