@@ -61,6 +61,10 @@ Cael May 2020
 	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
 	faction_whitelist = null
+	spawnpoint_override = null
+	fallback_spawnpoint = null
+	account_allowed = FALSE
+	generate_email = FALSE
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 /* The actual changes */
