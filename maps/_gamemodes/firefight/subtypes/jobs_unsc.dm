@@ -135,7 +135,7 @@ Cael May 2020
 	name = "T-Vaoan Seperatist (firefight)"
 
 	//guns and ammo and covvie hardcases for fun (they'll have to find different guns when they run out. but this is so they can have some fun before then)
-	suitstorage = /obj/item/weapon/gun/energy/plasmapistol
+	suit_store = /obj/item/weapon/gun/energy/plasmapistol
 	back = /obj/item/weapon/gun/projectile/type31needlerifle
 	belt = /obj/item/weapon/storage/box/needlerifle
 	l_pocket = /obj/item/weapon/storage/pocketstore/hardcase/bullets/cov
