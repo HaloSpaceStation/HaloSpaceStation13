@@ -53,7 +53,7 @@ Cael May 2020
 	account_allowed = FALSE
 	generate_email = FALSE
 
-/datum/job/unsc/skirmseppie
+/datum/job/unsc/skirmseppie/firefight
 	title = "T-Vaoan Seperatist"
 	total_positions = 2
 	spawn_positions = 2
