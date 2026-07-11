@@ -53,7 +53,7 @@ Cael May 2020
 	account_allowed = FALSE
 	generate_email = FALSE
 
-/datum/job/unsc/skirmseppie
+/datum/job/unsc/skirmseppie/firefight
 	title = "T-Vaoan Seperatist"
 	total_positions = 2
 	spawn_positions = 2
@@ -61,6 +61,10 @@ Cael May 2020
 	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
 	faction_whitelist = null
+	spawnpoint_override = null
+	fallback_spawnpoint = null
+	account_allowed = FALSE
+	generate_email = FALSE
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 /* The actual changes */
@@ -135,7 +139,7 @@ Cael May 2020
 	name = "T-Vaoan Seperatist (firefight)"
 
 	//guns and ammo and covvie hardcases for fun (they'll have to find different guns when they run out. but this is so they can have some fun before then)
-	suit = /obj/item/weapon/gun/energy/plasmapistol
+	suit_store = /obj/item/weapon/gun/energy/plasmapistol
 	back = /obj/item/weapon/gun/projectile/type31needlerifle
 	belt = /obj/item/weapon/storage/box/needlerifle
 	l_pocket = /obj/item/weapon/storage/pocketstore/hardcase/bullets/cov
