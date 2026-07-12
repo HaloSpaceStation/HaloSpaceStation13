@@ -86,7 +86,7 @@
 	armor = list(melee = 30, bullet = 40, laser = 40, energy = 40, bomb = 40, bio = 20, rad = 20)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
-/obj/item/clothing/gloves/shield_gauntlet/kigyar/first_contact
+/obj/item/clothing/gloves/shield_gauntlet/first_contact
 	name = "Faulty Shield Gauntlet"
 	desc = "Projects a shimmering shield of plasma, however this one sputters and seems have been weakened greatly, likely due to internal component removal."
 	shield_max_charge = 100

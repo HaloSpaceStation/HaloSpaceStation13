@@ -30,6 +30,7 @@
 	/datum/job/unsc/odst,\
 	/datum/job/unsc/odst/squad_leader,\
 	/datum/job/unsc/oni/field_agent,\
+	/datum/job/unsc/skirmseppie,\
 	)
 
 /datum/spawnpoint/unsc_base/New()
@@ -68,6 +69,7 @@
 	/datum/job/unsc/odst,\
 	/datum/job/unsc/odst/squad_leader,\
 	/datum/job/unsc/oni/field_agent,\
+	/datum/job/unsc/skirmseppie,\
 	)
 
 /datum/spawnpoint/unsc_base_fallback/New()

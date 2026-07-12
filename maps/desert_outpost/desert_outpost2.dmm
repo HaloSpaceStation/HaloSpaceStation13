@@ -35,7 +35,7 @@
 "aI" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 5},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "aJ" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 8},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "aK" = (/obj/structure/destructible/marine_barricade{icon_state = "fullbarricade"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
-"aL" = (/obj/effect/landmark/assault_target_firefight,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
+"aL" = (/obj/effect/landmark/assault_target/covenant,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "aM" = (/obj/structure/destructible/railing/industrial/corner{icon_state = "railing_deco"; dir = 8},/obj/structure/destructible/railing/industrial/corner,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "aN" = (/obj/machinery/light/floor,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "aO" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 1},/turf/simulated/floor/tech/steel,/area/planet/daynight/floor1)
@@ -127,6 +127,7 @@
 "cw" = (/obj/machinery/light/spot{icon_state = "tube1"; dir = 4},/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 6},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "cx" = (/obj/structure/destructible/railing/industrial,/obj/effect/floor_decal/techfloor{icon_state = "techfloor_edges"; dir = 10},/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 "cy" = (/obj/structure/closet/crate/supply_drop,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/obj/item/weapon/armor_patch,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
+"cz" = (/obj/effect/landmark/assault_target_firefight,/turf/simulated/floor/tiled/techfloor,/area/planet/daynight/floor1)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababababababab
@@ -158,7 +159,7 @@ aaacafafabacacaaaaaaaaababababababababababababababababababababababababababababab
 aaacafafababacaaaaaaaaababababababababababababababababababababababababababababababababababababababababababababaJakakakaPabababababababababababababababababababababababababababababababababababababababab
 aaacacafafabacaaaaaaaaababababababababababababababababababababababababababababbGavavbHababababababababababababaJakakbIaPabababababababababababababababababababababababababababababababababababababababab
 aaaaacafafabacaaaaaaaaababababababababababababababababababababababababababababaJaKakbJababababababababababababaJaLaKakaMabababababababababababababababababababababababababababababababababababababababab
-aaaaacacafafacaaaaaaaaababababababababababababababababababababababababababababaJakaNbKavavbLaOaOaOaOaOaOaOaOaObMakaKakbNabababababababababababababababababababababababababababababababababababababababab
+aaaaacacafafacaaaaaaaaababababababababababababababababababababababababababababaJakaNbKavavbLaOaOaOaOaOaOaOaOaObMczaKakbNabababababababababababababababababababababababababababababababababababababababab
 aaaaaaacafafacaaaaaaabababababababababababababababababababababababababababababaJaQaRaSakclbJaTaUaVaUaTaUaVaUaTbOaWaKakbPabababababababababababababababababababababababababababababababababababababababab
 aaaaaaacafafacaaaaaaabababababababababababababababababababababababababababababaJaYaZcmakakbQbbbbbbbbbbbbbbbbbbbRakbSakaPabababababababababababababababababababababababababababababababababababababababab
 aaaaacacafafacaaaaababababababababababababababababababababababababababababababaJaYaZbaakakbTabababababababababbUbVbSbdatbWavavavavavatavavavavavbXatabababababababababababababababababababababababababab

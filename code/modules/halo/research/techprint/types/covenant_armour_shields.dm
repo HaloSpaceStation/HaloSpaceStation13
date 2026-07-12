@@ -27,7 +27,7 @@
 	name = "Kig-Yar shield gauntlet"
 	desc = "Analysis of a Covenant Kig-Yar shield gauntlet."
 	hidden = TRUE
-	required_objs = list(/obj/item/clothing/gloves/shield_gauntlet/kigyar)
+	required_objs = list(/obj/item/clothing/gloves/shield_gauntlet/minor)
 
 /datum/techprint/tvoan_gauntlet
 	name = "T\'Vaoan shield gauntlet"

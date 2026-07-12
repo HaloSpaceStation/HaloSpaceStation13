@@ -1,5 +1,6 @@
 #define JIRALHANAE_ICON_PATH_MOB 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_gear.dmi'
 #define GRUNT_GEAR_ICON 'code/modules/halo/covenant/species/unggoy/grunt_gear.dmi'
+#define SKIRM_GEAR_ICON 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
 
 ////////Boltersam\\\\\\\\
 
@@ -374,6 +375,19 @@
 	shoes = /obj/item/clothing/shoes/sangheili/socks
 	head = /obj/item/clothing/head/helmet/sangheili/socks
 	l_pocket = /obj/item/weapon/grenade/plasma
+
+///////Antonio72\\\\\\\\
+
+//Kig-Yar
+
+/obj/item/clothing/gloves/shield_gauntlet/ant
+	name = "Modified Kig-Yar Shield Gauntlet"
+	desc = "A wrist-worn gauntlet that contains a directional shield generator. It allows protection from gunfire in the direction the user is facing."
+	species_restricted = list("Kig-Yar")
+	body_parts_covered = HANDS
+	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+	siemens_coefficient = 0.15
+	shield_colour_values = list("#FEF001","#ffc003","#FD9A01","#FD6104","#F00505")
 
 
 ///////Vampire132978123\\\\\\\\
@@ -783,6 +797,50 @@
 					)
 	can_hold = list(/obj/item/clothing/suit/armor/special/skirmisher/murmillo/donator/planetary,
 					/obj/item/clothing/head/helmet/kigyar/skirmisher/murmillo/donator/planetary
+					)
+
+///////Kungfoocheese\\\\\\\\
+
+//Skirmisher
+
+/obj/item/clothing/suit/armor/special/skirmisher/champion/kungfoo
+	name = "'T\'Vaoan Medicus harness'"
+	desc = "'A protective harness for use during combat by  T\'vaoan Kig'Yar.'"
+	icon = 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
+	icon_state = "kung_suit"
+	item_state = "kung_armour"
+
+/obj/item/clothing/gloves/skirmisher_shield_gauntlets/champion/kungfoo
+	name = "'T\'Vaoan Medicus helmet'"
+	desc = "'A T\'Vaoan Kig-Yar helmet with inbuilt night vision.'"
+	icon = 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
+	icon_state = "kung_gauntets"
+	item_state = "kung_shield"
+
+/obj/item/clothing/shoes/skirmisher/kungfoo
+	name = "'T\'Vaoan Medicus greaves'"
+	desc = "'Point defence gauntlets with twin energy shields for deflecting fire.'"
+	icon = 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
+	icon_state = "kung_greaves"
+	item_state = "kung_boots"
+
+/obj/item/clothing/head/helmet/kigyar/skirmisher/champion/kungfoo
+	name = "'T\'Vaoan Medicus helmet'"
+	desc = "'Kig'Yar greaves for lower limb protection.'"
+	icon = 'code/modules/halo/covenant/species/tvoan/skirm_clothing.dmi'
+	icon_state = "kung_helm"
+	item_state = "kung_helmet"
+
+/obj/item/weapon/storage/box/large/donator/kungfoo
+	startswith = list(/obj/item/clothing/suit/armor/special/skirmisher/champion/kungfoo,
+					/obj/item/clothing/head/helmet/kigyar/skirmisher/champion/kungfoo,
+					/obj/item/clothing/shoes/skirmisher/kungfoo,
+					/obj/item/clothing/gloves/skirmisher_shield_gauntlets/champion/kungfoo
+					)
+	can_hold = list(/obj/item/clothing/suit/armor/special/skirmisher/champion/kungfoo,
+					/obj/item/clothing/head/helmet/kigyar/skirmisher/champion/kungfoo,
+					/obj/item/clothing/shoes/skirmisher/kungfoo,
+					/obj/item/clothing/gloves/skirmisher_shield_gauntlets/champion/kungfoo
 					)
 
 ///////Timmypool\\\\\\\\

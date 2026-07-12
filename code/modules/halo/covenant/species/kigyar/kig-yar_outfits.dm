@@ -8,7 +8,7 @@
 	back = null
 	l_hand = /obj/item/weapon/melee/blamite/dagger
 	belt = null
-	gloves = /obj/item/clothing/gloves/shield_gauntlet/kigyar
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/minor
 	head = /obj/item/clothing/head/helmet/kigyar
 	l_pocket = null
 	r_pocket = null
@@ -47,7 +47,7 @@
 	uniform = /obj/item/clothing/under/kigyar
 	suit = /obj/item/clothing/suit/armor/kigyar
 	head = /obj/item/clothing/head/helmet/kigyar
-	gloves = /obj/item/clothing/gloves/shield_gauntlet/kigyar
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/minor
 	shoes = /obj/item/clothing/shoes/skirmisher
 	//
 	id_type = /obj/item/weapon/card/id/jackal_minor
@@ -64,7 +64,7 @@
 	l_pocket = /obj/item/weapon/paper/heresy_waiver
 	r_pocket = null
 	belt = null
-	gloves = /obj/item/clothing/gloves/shield_gauntlet/kigyar
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/minor
 	head = /obj/item/clothing/head/helmet/kigyar
 	r_hand = /obj/item/weapon/melee/energy/sword/pirate
 	shoes = /obj/item/clothing/shoes/skirmisher/major
@@ -78,7 +78,7 @@
 	l_ear = /obj/item/device/radio/headset/covenant
 	uniform = /obj/item/clothing/under/kigyar/ranger_kigyar
 	shoes = /obj/item/clothing/shoes/magboots/ranger_kigyar
-	gloves = /obj/item/clothing/gloves/shield_gauntlet/kigyar
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/minor
 	suit = /obj/item/clothing/suit/armor/special/eva/ranger_kigyar
 	head = /obj/item/clothing/head/helmet/ranger_kigyar
 	suit_store = /obj/item/weapon/tank/air/covenant

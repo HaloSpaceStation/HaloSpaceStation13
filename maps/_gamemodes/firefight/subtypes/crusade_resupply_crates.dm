@@ -20,7 +20,7 @@
 		/obj/item/weapon/armor_patch/cov)
 
 	if(prob(50))
-		contains += /obj/item/clothing/gloves/shield_gauntlet
+		contains += /obj/item/clothing/gloves/shield_gauntlet/minor
 
 	if(prob(50))
 		contains += /obj/item/weapon/storage/belt/covenant_ammo

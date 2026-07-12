@@ -56,7 +56,7 @@ GLOBAL_LIST_EMPTY(unggoy_pirate_spawns)
 	l_pocket = /obj/item/weapon/melee/energy/sword/pirate
 	r_pocket = /obj/item/ammo_magazine/type51mag
 	belt = /obj/item/ammo_magazine/type51mag
-	gloves = /obj/item/clothing/gloves/shield_gauntlet/kigyar
+	gloves = /obj/item/clothing/gloves/shield_gauntlet/minor
 	head = /obj/item/clothing/head/helmet/kigyar
 	l_hand = /obj/item/language_learner/kigyar_to_common
 

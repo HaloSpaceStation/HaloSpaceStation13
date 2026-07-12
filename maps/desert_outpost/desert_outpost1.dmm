@@ -61,8 +61,8 @@
 "bi" = (/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/steel_grid,/area/planet/daynight)
 "bj" = (/obj/structure/destructible/railing/industrial{icon_state = "railing_industrial"; dir = 4},/obj/structure/destructible/railing/industrial,/turf/simulated/floor/tiled/steel_grid,/area/planet/daynight)
 "bk" = (/obj/structure/destructible/railing/industrial,/obj/structure/destructible/railing/industrial/mounted,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/daynight)
-"bl" = (/obj/effect/landmark/assault_target,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/daynight)
-"bm" = (/obj/effect/landmark/assault_target/flood,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/daynight)
+"bl" = (/obj/effect/landmark/assault_target_firefight,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/daynight)
+"bm" = (/obj/effect/landmark/assault_target/flood,/turf/unsimulated/floor/desert,/area/planet/daynight)
 "bn" = (/obj/structure/destructible/railing/dark{icon_state = "railing_dark"; dir = 4},/obj/effect/floor_decal/industrial/warning/dust{icon_state = "warning_dust"; dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/plating,/area/planet/daynight)
 "bo" = (/obj/structure/stairs_decorative/industrial{icon_state = "industrialstair"; dir = 1},/turf/unsimulated/floor/desert,/area/planet/daynight)
 "bp" = (/turf/simulated/floor/tiled/techmaint,/area/planet/daynight)
@@ -152,6 +152,7 @@
 "cV" = (/obj/effect/floor_decal/steeldecal/steel_decals9{icon_state = "steel_decals9"; dir = 4},/turf/simulated/floor/tiled/techmaint,/area/planet/daynight)
 "cW" = (/obj/effect/floor_decal/steeldecal/steel_decals9{icon_state = "steel_decals9"; dir = 1},/turf/simulated/floor/tiled/techmaint,/area/planet/daynight)
 "cX" = (/obj/structure/disposalpipe/trunk{icon_state = "pipe-t"; dir = 1},/turf/unsimulated/wall{icon_state = "0"},/area/planet/daynight)
+"cY" = (/obj/effect/landmark/assault_target/covenant,/turf/simulated/floor/decor{icon_state = "asteroidplating"},/area/planet/daynight)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -182,8 +183,8 @@ aaaaaaabababababababababababaaaaaaaaaaaaaaaaaaagadadadadadadadadadadadadadadadad
 aaaaababababaaaaaaaaabababababaaaaaaaaaaaaaaaaagadadadadaeadadadadadadadadadadadadadadadadadadadadadadadadadadaGaHaHcxaGaVcdaVadaVaVaWceaVcfaVcgaVaGadadajajaqajajadadadadadadavadadadadadadadavadaiaXaX
 aaaaabababaaaaaaaaaaaaababababababaaaaaaaaaaagadadadadadadadadadadahadadadadadadadadadadadadadadadadadadadadadccbNbpaHccaVadaVaVaVadaVaVadaVaVaVaVadadadajajaqajajajajajajajajajajajajajajajajajajaYajaX
 aaaaababaaaaaaaaaaaaaaababababababaaaaaaaaaaaaagadadadadadadadadadadadadadadadavadadaGaZaZaZaZaZbaadadadadadadaGcPaHaHaGbbatbbbbaVaVaVaVaVaVadaVaVadadadajajajajajajajajajajajajajajajajajajajajajaYajaX
-aaaaabaaaaaaaaaaaaaaaaababaaaaabababaaaaaaaaaaagadadadadadadadadadadadadadadadadadadaGbcaDaDaDaDbdadadadadadadaGcScccSaGbeaVbfaVaVaVadaVbgaVadadadadadadajajajajanananajanananajanananajanananajanbhanaX
-aaaaababaaaaaaaaaaaaaaababaaaaabababababababababagadadadadadadadadadadadadadadaGaGaGaGaGaGaGbiaDbjadadadadadadaGbnaHbzaGbkbkbkbkaVaVblbmaVadadadadadadadajajajajajajajajajajajajajajajajajajajajajaYajaX
+aaaaabaaaaaaaaaaaaaaaaababaaaaabababaaaaaaaaaaagadadadadadadadadadadadadadadadadadadaGbcaDaDaDaDbdadadadadadadaGcScccSaGbeaVbfaVaVblbmcYbgaVadadadadadadajajajajanananajanananajanananajanananajanbhanaX
+aaaaababaaaaaaaaaaaaaaababaaaaabababababababababagadadadadadadadadadadadadadadaGaGaGaGaGaGaGbiaDbjadadadadadadaGbnaHbzaGbkbkbkbkaVaVaVaVaVadadadadadadadajajajajajajajajajajajajajajajajajajajajajaYajaX
 aaabababaaaaaaaaaaaaaaabaaaaaaaaaaaaabababababaaaaagadadadadadadadadadadadadadaGbAbCbDbCbGaGboadavadadadadadadaGcmbpcnaGbeaVbfaVadadadaVaVaVaVaVaVaVadadajajaqajajajajajajajajajajajajajajajajajajaYajaX
 aaabababaaaaaaaaaaaaababaaaaaaaaaaaaaaaaaaaaaaaaaaaaagadadadadadadadaeadadadadcccobqaHbqcpaGadadadadadadadadadaGbncKbzaGbrbsbraNaVaVaVchbucibwcjbyaGadadajajaqajajajadadadadadavadadadadadadadavadaiaXaX
 aaaaabababaaaaaaaaaaababaaaaaaaaaaaaaaaaaaaaaaaaaaaaagadadadadadadadadadadadadaGcoaHaHaHcpccadaoadadadadadadadaGbncLcqaGaGaGaGaGaGaGccaGaGaGaGaGaGaGadadajajaqajajajadadadadadadadadadadadadadadadadaiaa

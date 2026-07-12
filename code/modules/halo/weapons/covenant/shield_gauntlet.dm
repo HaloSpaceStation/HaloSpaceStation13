@@ -267,7 +267,7 @@
 	siemens_coefficient = 0.15
 	shield_colour_values = list("#ff0000","#ff0044","#ff00d9","#5100ff","#0000ff") //highest charge to lowest charge
 
-/obj/item/clothing/gloves/shield_gauntlet/kigyar
+/obj/item/clothing/gloves/shield_gauntlet/minor
 	name = "Kig-Yar Point Defense Gauntlet"
 	desc = "A wrist-worn gauntlet that contains a directional shield generator, allowing it to provide protection from gunfire in the direction the user is facing."
 	species_restricted = list("Kig-Yar")
@@ -284,12 +284,3 @@
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
 	siemens_coefficient = 0.15
 	shield_colour_values = list("#0000FF","#5100ff","#ff00d9","#ff0044","#ff0000")
-
-/obj/item/clothing/gloves/shield_gauntlet/ant
-	name = "Modified Kig-Yar Shield Gauntlet"
-	desc = "A wrist-worn gauntlet that contains a directional shield generator. It allows protection from gunfire in the direction the user is facing."
-	species_restricted = list("Kig-Yar")
-	body_parts_covered = HANDS
-	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
-	siemens_coefficient = 0.15
-	shield_colour_values = list("#FEF001","#ffc003","#FD9A01","#FD6104","#F00505")

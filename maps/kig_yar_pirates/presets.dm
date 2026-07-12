@@ -17,7 +17,7 @@
 	/obj/item/clothing/under/kigyar/variant,
 	/obj/item/clothing/head/helmet/kigyar/first_contact,
 	/obj/item/clothing/suit/armor/kigyar/first_contact,
-	/obj/item/clothing/gloves/shield_gauntlet/kigyar/first_contact,
+	/obj/item/clothing/gloves/shield_gauntlet/first_contact,
 	/obj/item/weapon/gun/energy/plasmapistol,
 	/obj/item/weapon/gun/energy/plasmapistol/fastfire,
 	/obj/item/weapon/storage/backpack/sangheili,
