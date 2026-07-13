@@ -44,6 +44,7 @@
 		/datum/job/covenant/yanmee_ultra,\
 		/datum/job/covenant/yanmee_leader,\
 		/datum/job/covenant/lesser_prophet,\
+		/datum/job/covenant/human,\
 		/datum/job/covenant/mgalekgolo\
 		)
 

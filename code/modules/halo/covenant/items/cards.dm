@@ -189,3 +189,10 @@
 	name = "UNSC Yanme'e Separatist"
 	icon = 'code/modules/halo/icons/objs/(Placeholder)card.dmi'
 	icon_state = "id"
+
+/***** HUMAN *****/
+
+/obj/item/weapon/card/id/human_cov
+	name = "Human Penitent identification card"
+	icon = 'code/modules/halo/covenant/items/Cards.dmi'
+	icon_state = "gruntminor_id"
