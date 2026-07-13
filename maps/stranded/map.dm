@@ -23,4 +23,6 @@
 		/datum/job/unsc/odst/firefight,\
 		/datum/job/unsc/odst/squad_leader/firefight,\
 		/datum/job/unsc/spartan_two/firefight,\
-		/datum/job/colonist/firefight)
+		/datum/job/colonist/firefight,\
+		/datum/job/unsc/skirmseppie/firefight\
+		)
