@@ -63,7 +63,6 @@
 	var/obj/linked_console
 
 /obj/effect/bombardment_beacon/proc/activate_beacon(var/obj/linked_to)
-	. = ..()
 	linked_console = linked_to
 	var/area/area_contained = loc.loc
 	if(!istype(area_contained))

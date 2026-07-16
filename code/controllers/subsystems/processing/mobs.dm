@@ -3,11 +3,12 @@ PROCESSING_SUBSYSTEM_DEF(mobs)
 	priority = 100
 	flags = SS_KEEP_TIMING|SS_NO_INIT
 	runlevels = RUNLEVEL_GAME|RUNLEVEL_POSTGAME
-	wait = 20
+	wait = 10
 
-	process_proc = /mob/proc/Life
+	process_proc = "Life"
 
 	var/list/mob_list
 
 /datum/controller/subsystem/processing/mobs/PreInit()
+	. = ..()
 	mob_list = processing // Simply setups a more recognizable var name than "processing"
