@@ -86,6 +86,10 @@
 	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact. This one appears to be disabled"
 	max_shots = 0
 
+/obj/item/weapon/gun/energy/plasmapistol/unsc
+	desc = "A typical Covenant Plasma Pistol, some of the internal components seem to have been modified for more simple maintenance. This one comes in a crude makeshift green paint job."
+	icon_state = "UNSC Plasma Pistol"
+
 /obj/item/weapon/gun/energy/plasmapistol/disabled/attack_self(var/mob/user)
  return
 

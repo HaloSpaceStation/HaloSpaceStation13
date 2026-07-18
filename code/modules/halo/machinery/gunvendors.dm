@@ -60,6 +60,57 @@
 		/obj/item/turret_deploy_kit/chaingun = 2,
 	)
 
+/obj/machinery/pointbased_vending/armory/hybrid/seppie // Custom vendor to give Seppies equipment, may be expanded as needed.
+	name = "Separatist Equipment Rack"
+	desc = "Storage for basic weapons and ammunition, alongside some stolen Covenant equipment."
+	req_access = list(access_unsc_armoury)
+	products = list(
+					"Melee" = -1,
+					/obj/item/weapon/material/knife/combat_knife = 0,
+					/obj/item/weapon/material/machete = 0,
+					"Covenant Guns" = -1,
+					/obj/item/weapon/gun/energy/plasmarifle/unsc = 0,
+					/obj/item/weapon/gun/energy/plasmapistol/unsc = 0,
+					"Guns" = -1,
+					/obj/item/weapon/gun/projectile/m6d_magnum = 0,
+					/obj/item/weapon/gun/projectile/m7_smg = 0,
+					/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts = 0,
+					/obj/item/weapon/gun/projectile/m392_dmr = 0,
+					/obj/item/weapon/gun/projectile/ma5b_ar = 0,
+					/obj/item/weapon/gun/projectile/br55 = 0,
+					"Ammunition" = -1,
+					/obj/item/ammo_magazine/m6d/m225 = 0,
+					/obj/item/ammo_magazine/ma5b/m118 = 0,
+					/obj/item/ammo_magazine/m392/m120 = 0,
+					/obj/item/ammo_magazine/br55/m634 = 0,
+					/obj/item/ammo_magazine/m7/m443 = 0,
+					/obj/item/ammo_magazine/m7/rubber = 0,
+					/obj/item/ammo_box/shotgun = 0,
+					/obj/item/ammo_box/shotgun/slug = 0,
+					/obj/item/ammo_box/shotgun/beanbag = 0,
+					"Explosives" = -1,
+					/obj/item/weapon/grenade/frag/m9_hedp = 0,
+					/obj/item/weapon/grenade/smokebomb = 0,
+					/obj/item/weapon/plastique = 0,
+					/obj/item/weapon/plastique/breaching = 0,
+					/obj/item/weapon/plastique/breaching/longrange = 0,
+					"Miscellaneous" = -1,
+					/obj/item/weapon/armor_patch = 0,
+					/obj/item/weapon/armor_patch/mini = 0,
+					/obj/item/drop_pod_beacon = 0,
+					/obj/item/turret_deploy_kit/HMG = 0,
+					/obj/item/turret_deploy_kit/chaingun = 0,
+					)
+	amounts = list(\
+		/obj/item/weapon/grenade/frag/m9_hedp = 15,
+		/obj/item/weapon/grenade/smokebomb = 15,
+		/obj/item/weapon/plastique = 2,
+		/obj/item/weapon/plastique/breaching = 8,
+		/obj/item/weapon/plastique/breaching/longrange = 8,
+		/obj/item/turret_deploy_kit/HMG = 2,
+		/obj/item/turret_deploy_kit/chaingun = 2,
+	)
+
 /obj/machinery/vending/armory/light
 	name = "UNSC Light Equipment Rack"
 	desc = "Storage for basic weapons and ammunition, alongside some equipment."

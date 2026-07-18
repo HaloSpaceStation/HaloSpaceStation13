@@ -72,6 +72,7 @@
 	title = "T-Vaoan Seperatist"
 	total_positions = 1
 	spawn_positions = 1
+	spawnpoint_override = null
 	outfit_type = /decl/hierarchy/outfit/skirmisher_unsc
 	access = list(access_unsc,access_unsc_medical,access_unsc_marine,access_unsc_armoury)
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
