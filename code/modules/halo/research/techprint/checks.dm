@@ -45,11 +45,11 @@
 
 			return TRUE
 
-/datum/techprint/proc/check_objs(var/obj/item/I, var/update_progress = FALSE, var/list/list_search = required_objs, var/list/dontmatch = forbbiden_objs)
+/datum/techprint/proc/check_objs(var/obj/item/I, var/update_progress = FALSE, var/list/list_search = required_objs, var/list/dontmatch = forbidden_objs)
 	. = FALSE
 
 	if(I.type in dontmatch) // Checking if the object is in the forbidden items list defined in _techprint.dm
-		return // If it is in the forbidden_objs it then returns the process as it is already defined as FALSE earlier on.
+		return FALSE // If it is in the forbidden_objs it then returns the process.
 
 	for(var/checktype in list_search)
 		//this will check subtypes as well
