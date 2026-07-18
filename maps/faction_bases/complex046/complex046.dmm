@@ -433,7 +433,8 @@
 "iq" = (/obj/machinery/light{dir = 1},/obj/effect/landmark/start{name = "T-Vaoan Seperatist"},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "ir" = (/obj/machinery/pointbased_vending/armory/hybrid/seppie,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "is" = (/obj/machinery/door/airlock/halo{name = "Separatist Quarters"; req_access = list(142)},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
-"it" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
+"it" = (/obj/structure/weapon_rack,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
+"iu" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "js" = (/obj/structure/table/rack,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "jQ" = (/obj/item/modular_computer/console/unsc/oni_supply,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "kC" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/surgery,/obj/item/stack/nanopaste,/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
@@ -532,16 +533,16 @@ aaaQacacadafafafafafafafafahacacacaiajajajawawawawawawawawawawawbedrdrdrdrdraDaP
 aaabacacadafafafafafafafafahacacacaiblajajawbmawawawawawbmawawawaDdrdQgvdQdraDgRaPbOaPaPaPcwaPaPcEaDaa
 aafoacacayafafafaffVafgTafahfnabfWbebebebebebebebebebebebebebebeaDdrdZeadZdraDgRaPcMaPcMbOdbaPaPcEaDaa
 aaasatbqasaUaWaWaWasasasasasasaDaDaDaDaeaeaeaeaeaeaeaeaeaeaeaeaeaDaEaEaPfbboaDfpaPbOdsbOaPcwaPaPduaDaa
-aaasbgbqbPaWaWaWaWcicjcjKfcjfIaDipiqipaeaeamaoazavazazavazazazaAaDaPaPaPaPaPdKaPaPbRaPcMbOcwaPaPaPaDaa
-aaasckbqaWaWaWaWaWcjapcjcjdDcjaDipeBipaeaBaCaFaCaFaCaFaCaFaCaFaGaDgMaPbOaPNfaDgRaPaPaPaPbOcwaPaPgRaDaa
+aaasbgbqbPaWaWaWaWcicjcjKfcjfIaDipiqiraeaeamaoazavazazavazazazaAaDaPaPaPaPaPdKaPaPbRaPcMbOcwaPaPaPaDaa
+aaasckbqaWaWaWaWaWcjapcjcjdDcjaDipeBiraeaBaCaFaCaFaCaFaCaFaCaFaGaDgMaPbOaPNfaDgRaPaPaPaPbOcwaPaPgRaDaa
 aaasbqbqaWededaWaWaWaWaWaWaWaWaDeBeBeBaeaHaFaFaFaFaFaFaFaFaFaFaGaDfYaPbOaPgIaDgbaPbRaPbRaPcwaPaPduaDaa
-aaasbqcmcjcjgUgXedaWaWaWaWaWaWaDireBiraeaRaZgSaZaYaZaZaZbabbaZSnaDPGaPaPaPdeaDaPiggfglgYaPcwgfgfdTaDaa
+aaasbqcmcjcjgUgXedaWaWaWaWaWaWaDiteBeBaeaRaZgSaZaYaZaZaZbabbaZSnaDPGaPaPaPdeaDaPiggfglgYaPcwgfgfdTaDaa
 aaasbqbqcjRwcjcjededaWeAeAeAeDaDaDisaDaeaeaeaeaeaeaecIddaeaeaeaeaDaDaDdKaDaDaDaPgxdFgtgndJeygogmgnaDaa
 aaasgZgZcjcjcjcjaWaWaWcjcjcjcjbqeBhadRdHdIdIdIdIdIdScfeBbBaTeKsSaMaDaPaPaPbOgzaPgxgpaJememgyemaNeqaDaa
 aaasckgZbqbqbqbqbqbqgZgZbqbqgabqhahadMdNdNdNdNdNdNdOeBeBetaPaPaPaPdKaPaPaPbObOaPgxgremememgyememeqaDaa
 aaasbqgZbqbqcnbqakgZgZbqbqcnbqaueBeBdMdNdPdPdPdPdNdOfseBaPbObOaPaPaDdvjQdAaPbObOgxgsemememgyememeqaDaa
 aabfbfeIbVbfbfbfbfbfbfeIbVbfbfbfeBeBdMdNdPdPdPdPdNdOeBgcfHbOaPaPaPaDgAgBaPaPaPaPgxgpaJememgyemaNeqaDaa
-aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOhaeBaDaXcagDgEaDaDgGgHgKgKgLaDitgtgtgmgmgtgtgnaDaa
+aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOhaeBaDaXcagDgEaDaDgGgHgKgKgLaDiugtgtgmgmgtgtgnaDaa
 aabfcBbtbtcdiddLbtdLekcdbtbtbtbVeBeBdRdWdWdWdWdWdWdRhahcaDaDaDaDaDaDgNeBeBeBeBfgaDaDaDaDaDaDaDaDaDaDaa
 aabfeTbtbtdLhVdLbtdLhVdLbtbtggfreBeBhahaeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBgheBeBeBeBLYeBeBeBeBeBeBhaaDaa
 aabffBbtbtcdendLbtdLflcdbtbtfCbfeBeCeBhaeBcWeBdceBeBeCeBeBeBeBeCeBeBhahahahahaeBeBeBeBeBeBeBgieBeCaDaa
