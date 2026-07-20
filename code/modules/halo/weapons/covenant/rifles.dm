@@ -55,6 +55,10 @@
 	desc = "Also known as the \"Plasma Rifle\", this weapon fires bursts of superheated plasma. This one seems to have fused the internal components together, making it unusable."
 	max_shots = 0
 
+/obj/item/weapon/gun/energy/plasmarifle/unsc
+	desc = "A typical Covenant Plasma Rifle, some of the internal components seem to have been modified for more simple maintenance. This one comes in a crude makeshift green paint job."
+	icon_state = "UNSC Plasma Rifle"
+
 /obj/item/weapon/gun/energy/plasmarifle/brute
 	name = "Type-25 Directed Energy Rifle (overcharged)"
 	icon_state = "Brute Plasma Rifle"
