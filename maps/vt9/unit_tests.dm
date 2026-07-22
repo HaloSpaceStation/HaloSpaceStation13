@@ -47,13 +47,3 @@
 		/area/exoplanet/snow,
 		/area/planets
 	)
-
-	area_coherency_test_exempt_areas = list(
-		/area/space,
-		/area/exoplanet,
-		/area/exoplanet/desert,
-		/area/exoplanet/grass,
-		/area/exoplanet/snow,
-		/area/exo_research_facility/exterior/autolight,
-		/area/glassed_planet/exterior/autolight,
-	)
