@@ -52,7 +52,7 @@
 		return 1
 	if(!istype(h))
 		return 0
-	if(h.species.type == /datum/species/unggoy)
+	if(h.species.type == /datum/species/unggoy || h.species.type == /datum/species/human)
 		return 1
 	return 0
 

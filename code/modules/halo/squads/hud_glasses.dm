@@ -33,7 +33,6 @@
 	set name = "Toggle Remote Camera"
 	set category = "Object"
 	set src in usr
-	..()
 	if(camera_status & BROKEN)
 		to_chat(usr,"<span class='notice'>[src]'s remote camera has been destroyed!</span>")
 	else if(camera_status & EMPED)

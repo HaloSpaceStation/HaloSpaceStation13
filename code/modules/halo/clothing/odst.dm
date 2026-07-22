@@ -118,7 +118,6 @@
 		item_state = item_state_novisr
 	update_icon()
 	update_clothing_icon()
-	. = ..()
 
 /obj/item/clothing/suit/armor/special/odst/cqb
 	name = "ODST CQB Armour"

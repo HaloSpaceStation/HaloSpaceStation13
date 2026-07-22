@@ -16,6 +16,7 @@
 	var/list/required_reagents = list()		//"reagent name" = amount (checks anything that can hold reagents)
 	var/list/required_materials = list()	//"material name" = amount (only checks material stacks)
 	var/list/required_objs = list()			//obj type = "name" (the name can be anything)
+	var/list/forbidden_objs = list() // Direct type-matching to prevent research of specific items.
 	//if hidden == TRUE then have exactly 1 type/material/reagent in one of these three lists.
 	//Define required amount as 1; as it only checks for presence and not amount.
 

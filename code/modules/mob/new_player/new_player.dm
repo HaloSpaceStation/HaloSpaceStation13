@@ -478,7 +478,7 @@
 				R.info = client.prefs.relations_info[T]
 			mind.gen_relations_info = client.prefs.relations_info["general"] */
 		mind.transfer_to(new_character)					//won't transfer key since the mind is not active
-	new_character.name = real_name
+	new_character.name = new_character.real_name
 	new_character.dna.ready_dna(new_character)
 	new_character.dna.b_type = client.prefs.b_type
 	new_character.sync_organ_dna()

@@ -34,6 +34,7 @@
 	desc = "Analysis of a Covenant T\'Vaoan shield gauntlet."
 	hidden = TRUE
 	required_objs = list(/obj/item/clothing/gloves/skirmisher_shield_gauntlets)
+	forbidden_objs = list(/obj/item/clothing/gloves/skirmisher_shield_gauntlets/unsc) // Ensures this item can not be used in ONI research to prevent research-cheese.
 
 /datum/techprint/shield_barricade
 	name = "Covenant Shield Barricade"

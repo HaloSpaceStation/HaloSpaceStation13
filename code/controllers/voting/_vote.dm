@@ -26,7 +26,6 @@ GLOBAL_VAR_INIT(last_player_vote, 0)
 	var/delayed = 0
 
 /datum/vote/proc/Initialize()
-	. = ..()
 	reset()
 
 /datum/vote/proc/reset()
